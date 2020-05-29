@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/engineerLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/engRow1Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/sinBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/sin"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                tools:ignore="NestedWeights" />
+
+            <Button
+                android:id="@+id/cosBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/cos"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/tanBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/tan"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/arcsinBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/arcsin"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engRow2Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engRow1Id">
+
+            <Button
+                android:id="@+id/arccosBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/arccos"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/arctanBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/arctan"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/sinhBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/sinh"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/coshBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/cosh"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engRow3Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engRow2Id">
+
+            <Button
+                android:id="@+id/tanhBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/tanh"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/arcsinhBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/arcsinh"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/arccoshBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/arccosh"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/arctanhBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/arctanh"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engRow4Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engRow3Id">
+
+            <Button
+                android:id="@+id/piBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/pi"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/expBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/exp"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/powBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/pow"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/sqrBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/sqr"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engRow5Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engRow4Id">
+
+            <Button
+                android:id="@+id/cubeBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/cube"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/invBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/inv"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/logDecBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/log_dec"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/logEBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/log_e"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/engRow6Id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engRow5Id">
+
+            <Button
+                android:id="@+id/log2BtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/log_two"
+                android:textSize="20sp"
+                tools:ignore="NestedWeights"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/factorialBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/factorial"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/sqrRootBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/sqr_root"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/cubeRootBtnId"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorActionBtn"
+                android:text="@string/cube_root"
+                android:textSize="20sp"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

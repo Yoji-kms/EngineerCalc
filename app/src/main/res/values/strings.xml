@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Engineer Calc</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="sum">+</string>
+    <string name="sub">-</string>
+    <string name="div">÷</string>
+    <string name="mul">×</string>
+    <string name="clear">C</string>
+    <string name="sign">±</string>
+    <string name="percent">%</string>
+    <string name="clear_txt">clear</string>
+    <string name="sign_txt">change sign</string>
+    <string name="percent_txt">percent</string>
+    <string name="div_txt">divide</string>
+    <string name="mul_txt">multiply</string>
+    <string name="sub_txt">subtract</string>
+    <string name="sum_txt">add</string>
+    
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="arcsin">sin¯¹</string>
+    <string name="arccos">cos¯¹</string>
+    <string name="arctan">tan¯¹</string>
+    <string name="sinh">sinh</string>
+    <string name="cosh">cosh</string>
+    <string name="tanh">tanh</string>
+    <string name="arcsinh">sinh¯¹</string>
+    <string name="arccosh">cosh¯¹</string>
+    <string name="arctanh">tanh¯¹</string>
+    <string name="pi">π</string>
+    <string name="exp">e</string>
+    <string name="pow">xⁿ</string>
+    <string name="sqr">x²</string>
+    <string name="cube">x³</string>
+    <string name="inv">x¯¹</string>
+    <string name="log_dec">lg</string>
+    <string name="log_e">ln</string>
+    <string name="log_two">log₂</string>
+    <string name="factorial">x!</string>
+    <string name="sqr_root">√x</string>
+    <string name="cube_root">³√x</string>
+    
+    <string name="division_by_zero_message">Division by zero is impossible</string>
+    <string name="show_engineer_functions">Show engineer functions</string>
+</resources>
