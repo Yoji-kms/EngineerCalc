@@ -2,6 +2,7 @@ package com.yoji.engineercalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean sign = false;
     private boolean secondNumFlag = false;
 
-    private View.OnClickListener signBtnOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener signBtnOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             calcTxt = calcMainTxtView.getText().toString();
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener percentOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener percentOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             calcTxt = calcMainTxtView.getText().toString();
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener dotBtnOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener dotBtnOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             calcTxt = calcMainTxtView.getText().toString();
@@ -68,14 +69,15 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener clearBtnOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener clearBtnOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             clear();
         }
     };
 
-    private View.OnClickListener numBtnOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener numBtnOnClickListener = new View.OnClickListener() {
+        @SuppressLint("NonConstantResourceId")
         @Override
         public void onClick(View v) {
             calcTxt = calcMainTxtView.getText().toString();
@@ -135,7 +137,8 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener actionBtnOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener actionBtnOnClickListener = new View.OnClickListener() {
+        @SuppressLint("NonConstantResourceId")
         @Override
         public void onClick(View v) {
             int id = v.getId();
@@ -168,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener equalOnClickListener = new View.OnClickListener() {
+    private final View.OnClickListener equalOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             calcTxt = calcMainTxtView.getText().toString();
@@ -180,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private CompoundButton.OnCheckedChangeListener showEngFunSwOnCheckedChangeListener = new CompoundButton.OnCheckedChangeListener() {
+    private final CompoundButton.OnCheckedChangeListener showEngFunSwOnCheckedChangeListener = new CompoundButton.OnCheckedChangeListener() {
         @Override
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
             if (isChecked){
